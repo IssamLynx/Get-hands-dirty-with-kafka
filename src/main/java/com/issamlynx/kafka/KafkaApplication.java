@@ -18,9 +18,9 @@ public class KafkaApplication {
 		return args -> {
 			// Envoyer un message au topic "issamlynx"
 			String message = "Hello, Kafka! This is a message from Spring Boot.";
-			kafkaTemplate.send("IssamLynx", message);
+			kafkaTemplate.send("issamevents", message);
 
-			System.out.println("Message envoyé avec succès au topic 'IssamLynx'");
+			System.out.println("Message envoyé avec succès au topic 'issamevents'");
 		};
 	}
 

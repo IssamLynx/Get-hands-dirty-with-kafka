@@ -9,6 +9,6 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaTopicConfig {
     @Bean
     public NewTopic IssamLynxTopic(){
-        return TopicBuilder.name("IssamLynx").build();
+        return TopicBuilder.name("issamevents").build();
     }
 }
